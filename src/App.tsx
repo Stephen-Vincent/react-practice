@@ -1,10 +1,15 @@
-import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
+
+const handleClick = () => {
+  console.log("button clicked");
+};
 
 const App = () => {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
   return (
     <div>
-      <ListGroup items={items} heading="Cities" />
+      <Button onClick={handleClick} color="danger">
+        Hello World
+      </Button>
     </div>
   );
 };
